@@ -1,9 +1,9 @@
-echo "# pythonProject" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Bananaman56036/pythonProject.git
-git push -u origin main
+import arcade
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+window = arcade.Window(800, 600, "Drawing a Circle")
+arcade.start_render()
+
+arcade.draw_circle_filled(400, 300, 50, arcade.color.BLUE)
+
+arcade.finish_render()
+arcade.run()
